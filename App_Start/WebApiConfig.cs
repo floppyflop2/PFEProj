@@ -19,6 +19,12 @@ namespace PFEProj
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Routes.MapHttpRoute(
+                name: "Home",
+                routeTemplate: "api/{id}",
+                defaults: new { id = RouteParameter.Optional }
+             );
         }
     }
 }

@@ -7,8 +7,12 @@ using System.Web.Http;
 
 namespace PFEProj.Controllers
 {
+
+  //  [Route("api/floppy")]
     public class ValuesController : ApiController
     {
+
+        string route = "api/floppy";
         // GET api/values
         public IEnumerable<string> Get()
         {
@@ -35,5 +39,8 @@ namespace PFEProj.Controllers
         public void Delete(int id)
         {
         }
+
+
+      
     }
 }
